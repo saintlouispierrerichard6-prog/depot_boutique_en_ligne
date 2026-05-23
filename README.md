@@ -1,0 +1,2 @@
+# cours_site_web_avance_Projet_creation_boutique_en_ligne.
+Ce repository est crée sous la direction du professeur Sedrick et contient le premier projet pratique du cours de web avancé enseigné a Lacité Collegiale. Dans ce repository, un projet de boutique en ligne est mis en oeuvre selon les directives du professeur. Ce projet peut demontrer la capacité des etudiants du groupe a travailler sur des projets.
