@@ -1,15 +1,186 @@
 
+
 .containerproduits{
 
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     flex-wrap: wrap;
+    margin-bottom: 4rem;
 }
 
 
-.containerproduits{
+.containerproduits #titre h2{
+
+    color: black;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: clamp(3em, 2vh, 4em);
+    text-align: center;
+    margin-top: 5rem;
+    
+}
+
+
+.containerproduits  #containerproduit12{ 
 
     display: flex;
-    gap: 2rem;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    gap: 4rem;
+    
+    
+}
+
+
+.containerproduits  #containerproduit12 #containerproduit1, #containerproduit2, #containerproduit3, #containerproduit4, #containerproduit5{ 
+   border: 2px black solid;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   border-radius: 15px;
+   box-shadow: 10 4px 12px rgb(161, 156, 156);
+   padding: 1rem;
+    
+}
+
+
+.containerproduits #containerproduit12 #containerproduit1 h3{ 
+
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1.6rem, 2vh, 4em);
+    text-align: center;
+    margin-top: 1rem;
+
+    
+}
+
+
+.containerproduits #containerproduit12 #containerproduit1 p{ 
+
+    color: black;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1rem, 2vh, 4em);
+    text-align: center;
+    max-width: 15rem;
+    text-align: justify;
+    padding: 1rem; 
+}
+
+.containerproduits #containerproduit12 #containerproduit2 h3{ 
+
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1.6rem, 2vh, 4em);
+    text-align: center;
+    margin-top: 1rem;
+
+    
+}
+
+
+.containerproduits #containerproduit12 #containerproduit2 p{ 
+
+    color: black;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1rem, 2vh, 4em);
+    text-align: center;
+    max-width: 15rem;
+    text-align: justify;
+    padding: 1rem; 
+}
+
+
+
+.containerproduits #containerproduit12 #containerproduit3 h3{ 
+
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1.6rem, 2vh, 4em);
+    text-align: center;
+    margin-top: 1rem;
+
+    
+}
+
+
+.containerproduits #containerproduit12 #containerproduit3 p{ 
+
+    color: black;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1rem, 2vh, 4em);
+    text-align: center;
+    max-width: 15rem;
+    text-align: justify;
+    padding: 1rem; 
+}
+
+
+.containerproduits #containerproduit12 #containerproduit4 h3{ 
+
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1.6rem, 2vh, 4em);
+    text-align: center;
+    margin-top: 1rem;
+
+    
+}
+
+
+.containerproduits #containerproduit12 #containerproduit4 p{ 
+
+    color: black;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1rem, 2vh, 4em);
+    text-align: center;
+    max-width: 15rem;
+    text-align: justify;
+    padding: 1rem; 
+}
+
+
+.containerproduits #containerproduit12 #containerproduit5 h3{ 
+
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1.6rem, 2vh, 4em);
+    text-align: center;
+    margin-top: 1rem;
+
+    
+}
+
+
+.containerproduits #containerproduit12 #containerproduit5 p{ 
+
+    color: black;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1rem, 2vh, 4em);
+    text-align: center;
+    max-width: 30rem;
+    text-align: justify;
+    padding: 1rem; 
+}
+
+
+.containerproduits #containerproduit12 #containerproduit1 img, #containerproduit2 img, #containerproduit3 img, #containerproduit4 img, #containerproduit5 img{ 
+
+    width: 25rem;
+    height: 15rem;
+    background-size: contain;
+    align-self: center;
+    
 }
