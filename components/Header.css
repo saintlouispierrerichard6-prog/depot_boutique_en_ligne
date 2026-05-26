@@ -1,0 +1,91 @@
+
+.containerHeader{
+  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.containerHeader #containerHeader2{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: black;
+    width: 100%;
+    padding: 1rem 10rem;
+    
+}
+
+.containerHeader #containerHeader2 #premierbarmenu{
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+
+}
+
+.containerHeader #containerHeader2 #containerreseauxsociaux ul{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color:  #B8860B;;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(2em, 2vh, 2.3em);
+    margin-top: 1rem;
+}
+
+
+.containerHeader #containerHeader2 #containerreseauxsociaux ul li:hover{
+
+    background-color: white;
+}
+
+
+
+
+.containerHeader #containerHeader2 #premierbarmenu h1{
+
+    font-family: cursive;
+    color: #C9A227;
+    font-size: clamp(2.9em, 2vh, 3em);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
+.containerHeader #containerHeader2 #premierbarmenu img{
+
+   width: 12rem;
+   height: 7rem;
+   object-fit: contain;
+   max-width: 15rem;
+   max-height: 10rem;
+
+}
+
+
+.containerHeader .barmenu ul{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: darkgoldenrod;
+    padding: 2rem;
+   
+}
+
+
+.containerHeader .barmenu ul li{
+
+    color: black;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: clamp(2em, 2vh, 2.3em);
+    margin-top: 0.7rem;
+   
+}

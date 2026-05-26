@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import "./Header.css";
 import {FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaTiktok} from "react-icons/fa";
 
 export default function AfficherHeader(){
@@ -8,9 +9,9 @@ export default function AfficherHeader(){
 
         <header className="containerHeader">
 
-                <div>
-                    <div>
-                         <Image src="/images/logo.png" alt="Logo de Elite Store" height={80} width={80} />
+                <div id="containerHeader2">
+                    <div id="premierbarmenu">
+                         <Image src="/images/logo.png" alt="Logo de Elite Store" height={100} width={100} />
                          <h1>Elite Store</h1>
                     </div>
                     
