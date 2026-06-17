@@ -48,8 +48,6 @@
 }
 
 
-
-
 .containerHeader #containerHeader2 #premierbarmenu h1{
 
     font-family: cursive;
@@ -91,6 +89,15 @@
     margin-top: 0.7rem;
    
 }
+
+.active-link {
+    border-bottom: 4px solid black;
+    color: white !important;
+    font-weight: 900;
+    padding-bottom: 0.5rem;
+}
+
+
 
 /* Tablette */
 @media (max-width: 1024px) {
