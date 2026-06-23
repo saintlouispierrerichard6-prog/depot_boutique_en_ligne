@@ -51,8 +51,8 @@ export default function AfficherHeader() {
                         <Link href="/actualites">Actualités</Link>
                     </li>
 
-                    <li className={isActive("/contacts")}>
-                        <Link href="/contacts">Contacts</Link>
+                    <li className={isActive("/contact")}>
+                        <Link href="/contact">Contacts</Link>
                     </li>
                 </ul>
             </nav>
