@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+import { ThemeProvider } from "./context/ThemeContext";
+import { LangProvider } from "./context/LangContext";
+
 export const metadata: Metadata = {
   title: "Elite Store",
   description: "Une boutique en ligne de vetement pour hommes et femmes",
@@ -17,11 +20,15 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        <Header />
+        <ThemeProvider>
+          <LangProvider>
+            <Header />
 
-        {children}
+            {children}
 
-        <Footer />
+            <Footer />
+          </LangProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
