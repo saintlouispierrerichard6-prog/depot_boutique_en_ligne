@@ -5,13 +5,34 @@ import Image from "next/image";
 import "./Header.css";
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaTiktok } from "react-icons/fa";
 import { usePathname } from "next/navigation";
+import { useTheme } from "@/app/context/ThemeContext";
+import { useLang } from "@/app/context/LangContext";
 
 export default function AfficherHeader() {
 
     const pathname = usePathname();
+    const { theme, toggleTheme } = useTheme();
+    const { lang, toggleLang } = useLang();
 
     const isActive = (path: string) =>
         pathname === path ? "active-link" : "";
+
+    const text = {
+        fr: {
+            accueil: "Accueil",
+            produits: "Produits",
+            panier: "Panier",
+            actualites: "Actualités",
+            contact: "Contacts",
+        },
+        en: {
+            accueil: "Home",
+            produits: "Products",
+            panier: "Cart",
+            actualites: "News",
+            contact: "Contact",
+        }
+    };
 
     return (
         <header className="containerHeader">
@@ -31,28 +52,39 @@ export default function AfficherHeader() {
                         <li><FaTiktok /></li>
                     </ul>
                 </div>
+
+                {/* Boutons Theme + Lang */}
+                <div id="headerButtons">
+                    <button onClick={toggleTheme}>
+                        {theme === "light" ? "🌙 Mode sombre" : "☀️ Mode clair"}
+                    </button>
+
+                    <button onClick={toggleLang}>
+                        {lang === "fr" ? "🇫🇷 Français" : "🇬🇧 English"}
+                    </button>
+                </div>
             </div>
 
             <nav className="barmenu">
                 <ul>
                     <li className={isActive("/")}>
-                        <Link href="/">Accueil</Link>
+                        <Link href="/">{text[lang].accueil}</Link>
                     </li>
 
                     <li className={isActive("/produits")}>
-                        <Link href="/produits">Produits</Link>
+                        <Link href="/produits">{text[lang].produits}</Link>
                     </li>
 
                     <li className={isActive("/panier")}>
-                        <Link href="/panier">Panier</Link>
+                        <Link href="/panier">{text[lang].panier}</Link>
                     </li>
 
                     <li className={isActive("/actualites")}>
-                        <Link href="/actualites">Actualités</Link>
+                        <Link href="/actualites">{text[lang].actualites}</Link>
                     </li>
 
                     <li className={isActive("/contact")}>
-                        <Link href="/contact">Contacts</Link>
+                        <Link href="/contact">{text[lang].contact}</Link>
                     </li>
                 </ul>
             </nav>
